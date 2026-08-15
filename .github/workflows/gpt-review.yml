@@ -1,0 +1,40 @@
+name: GPT Review
+
+# 배치가 events/ 카드를 푸시할 때만 실행 (리뷰 리포트 커밋은 재트리거되지 않음)
+on:
+  push:
+    branches: [main]
+    paths:
+      - "events/**.md"
+
+permissions:
+  contents: write
+
+jobs:
+  review:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2  # 직전 커밋과 비교하기 위해 2개
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run GPT review on changed cards
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_MODEL: ${{ vars.OPENAI_MODEL || 'gpt-5-mini' }}
+        run: python scripts/gpt_review.py
+
+      - name: Commit review report
+        run: |
+          git config user.name "gpt-reviewer[bot]"
+          git config user.email "actions@github.com"
+          git add reports/
+          git diff --cached --quiet && echo "No report to commit" && exit 0
+          git commit -m "GPT 감수 리포트 추가"
+          git push
