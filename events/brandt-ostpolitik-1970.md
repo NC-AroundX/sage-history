@@ -4,7 +4,7 @@ year_start: 1970
 year_end: 1970
 region: 유럽
 track: 화해와 전환
-tags: [빌리브란트, 동방정책, 바르샤바게토, 서독외교, 냉전화해]
+tags: [빌리브란트, 동방정책, 바르샤바 게토, 서독외교, 냉전화해]
 reliability: 통설
 slug: brandt-ostpolitik-1970
 ---
