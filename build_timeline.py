@@ -234,6 +234,7 @@ def load_events():
             "rhymes": rhyme_count(body),
             "html": md_to_html(body),
             "icon": ICON_GLYPHS.get(SLUG_ICON.get(slug, ""), DEFAULT_ICON),
+            "image": f"assets/images/{slug}.jpg" if os.path.exists(os.path.join(ROOT, "assets", "images", f"{slug}.jpg")) else "",
         })
     evs.sort(key=lambda e: (e["ys"], e["ye"]))
     return evs
@@ -291,6 +292,10 @@ nav button.on{color:var(--ink);border-bottom-color:var(--gold)}
 .ev.L .conn{right:-40px}.ev.R .conn{left:-40px}
 .evimg{width:54px;height:54px;border-radius:50%;background:oklch(98% .008 80);border:1px solid var(--hair);box-shadow:0 0 0 4px var(--paper),0 0 0 5px var(--hair);display:flex;align-items:center;justify-content:center;margin:0 auto 14px;color:var(--gold)}
 .evimg svg{width:28px;height:28px;overflow:visible}
+.ev .thumb{width:100%;aspect-ratio:16/10;overflow:hidden;border-radius:3px;margin:0 0 14px;box-shadow:0 8px 20px oklch(26% .02 60 / .18);filter:sepia(.14)}
+.ev .thumb img{width:100%;height:100%;object-fit:cover;display:block}
+.dimg2{margin:-6px 0 20px;border-radius:3px;overflow:hidden;box-shadow:0 14px 34px oklch(26% .02 60 / .24)}
+.dimg2 img{width:100%;display:block}
 .dhead .evimg{width:78px;height:78px;margin:0 auto 16px}
 .dhead .evimg svg{width:40px;height:40px}
 .ev .yr{font-family:'Nanum Myeongjo',serif;font-size:17px;letter-spacing:.14em;color:var(--ink)}
@@ -374,6 +379,7 @@ function draw(){
     const b=document.createElement("button");b.className="ev "+(side%2? "R":"L");side++;
     b.innerHTML=`<span class="dot"></span><span class="conn"></span>
       <div class="evimg">${iconSvg(e)}</div>
+      ${e.image?`<div class="thumb"><img src="${e.image}" alt="" loading="lazy"></div>`:""}
       <div class="yr">${e.period}</div>
       <div class="num">${String(idx).padStart(2,"0")}</div>
       <div class="track">${e.track}</div>
@@ -389,7 +395,7 @@ function open(e){
   document.getElementById("dcat").textContent=e.track;
   document.getElementById("dtitle").textContent=e.title;
   document.getElementById("dwho").textContent=e.period+" · "+e.region+" · "+e.reliability;
-  document.getElementById("dbody").innerHTML=e.html;
+  document.getElementById("dbody").innerHTML=(e.image?`<div class="dimg2"><img src="${e.image}" alt=""></div>`:"")+e.html;
   document.getElementById("dbody").scrollTop=0;
   dlg.showModal();
 }
