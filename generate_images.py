@@ -46,8 +46,20 @@ def subject_of(meta, body):
     # 사건의 시대·지역·주제를 장면 묘사로 (텍스트 렌더링 방지 위해 명사 위주)
     return f"A historical scene evoking: {title}. Setting: {region}. Mood: {gist}"
 
+# 특정 slug의 자동 생성 프롬프트가 안전필터에 걸릴 때, 중립적 묘사로 대체
+SUBJECT_OVERRIDES = {
+    "gandhi-salt-march-1930": (
+        "A tranquil historical scene set in early 20th-century coastal India: "
+        "a line of people in simple traditional clothing walking peacefully along "
+        "a coastal path toward the sea at dawn, calm and contemplative mood, "
+        "gentle morning light, no conflict, no crowds of confrontation"
+    ),
+}
+
 def build_prompt(meta, body):
-    return f"{subject_of(meta, body)}. Style: {STYLE}."
+    slug = meta.get("slug", "")
+    subject = SUBJECT_OVERRIDES.get(slug) or subject_of(meta, body)
+    return f"{subject}. Style: {STYLE}."
 
 def gen_image(prompt):
     body = json.dumps({
