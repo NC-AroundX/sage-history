@@ -16,8 +16,9 @@
 4. 각 사건 카드를 `events/` 폴더에 작성 (형식은 아래와 기존 카드 참조, 건당 500~800단어).
 5. `EVENTLIST.md` 상태를 `완료`+완료일로 갱신.
 6. `reports/YYYY-MM-DD-batch-NN.md` 검증 리포트 작성 (도서관과 동일 형식: 작성 목록 / ⚠️ 확인 필요 / 보류 / 다음 예정 / 피드백 반영 / GPT 감수 처리 내역).
-7. `python build_timeline.py` 실행(불가 시 동일 로직으로 직접)해 `timeline.html`·`index.html` 재생성.
-8. 모든 변경사항을 main에 커밋·푸시.
+7. `python generate_images.py`를 실행해 새 사건의 수채화를 생성한다(OPENAI_API_KEY가 있을 때만, 없으면 건너뛴다).
+8. `python build_timeline.py` 실행(불가 시 동일 로직으로 직접)해 `timeline.html`·`index.html` 재생성.
+9. 모든 변경사항을 main에 커밋·푸시.
 
 ## 카드 형식
 
