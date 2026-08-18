@@ -26,6 +26,132 @@ TRACK_COLORS = {
 }
 DEFAULT_COLOR = "#9AA3AF"
 
+# ==== 사건 상징 아이콘 (금박 라인아트, 64x64, stroke=currentColor) ====
+ICON_GLYPHS = {
+    "ship": '<path d="M8 42 Q32 52 56 42"/><line x1="32" y1="42" x2="32" y2="12"/><path d="M32 14 L46 29 L32 29 Z"/><line x1="6" y1="48" x2="58" y2="48"/>',
+    "wall_break": '<rect x="10" y="16" width="12" height="10"/><rect x="10" y="30" width="12" height="10"/><rect x="42" y="16" width="12" height="10"/><rect x="42" y="30" width="12" height="10"/><path d="M32 10 L27 22 L36 30 L26 40 L33 54"/>',
+    "network": '<circle cx="14" cy="20" r="4"/><circle cx="50" cy="16" r="4"/><circle cx="32" cy="34" r="4"/><circle cx="16" cy="48" r="4"/><circle cx="48" cy="46" r="4"/><line x1="17" y1="23" x2="29" y2="32"/><line x1="47" y1="19" x2="35" y2="31"/><line x1="29" y1="37" x2="19" y2="45"/><line x1="35" y1="37" x2="45" y2="43"/>',
+    "plague_mask": '<path d="M18 30 Q18 16 34 16 Q50 16 50 30 Q50 40 34 46 L46 52"/><circle cx="26" cy="26" r="2.6"/><path d="M18 30 Q10 32 6 40"/>',
+    "bow_figure": '<circle cx="32" cy="16" r="6"/><path d="M32 22 Q32 34 20 42"/><path d="M32 22 Q32 30 42 36"/><line x1="20" y1="42" x2="14" y2="50"/>',
+    "globe_coin": '<circle cx="32" cy="32" r="20"/><ellipse cx="32" cy="32" rx="8" ry="20"/><line x1="12" y1="32" x2="52" y2="32"/><line x1="15" y1="22" x2="49" y2="22"/><line x1="15" y1="42" x2="49" y2="42"/>',
+    "crossed_spears": '<line x1="14" y1="14" x2="50" y2="50"/><line x1="50" y1="14" x2="14" y2="50"/><path d="M14 14 L20 14 L14 20 Z"/><path d="M50 14 L44 14 L50 20 Z"/>',
+    "pickaxe": '<line x1="14" y1="50" x2="34" y2="18"/><path d="M22 18 Q34 8 46 18"/><circle cx="46" cy="46" r="5"/>',
+    "scale": '<line x1="32" y1="10" x2="32" y2="46"/><line x1="14" y1="20" x2="50" y2="20"/><path d="M14 20 Q10 32 18 34 Q26 32 22 20"/><path d="M42 20 Q38 32 46 34 Q54 32 50 20"/><line x1="20" y1="50" x2="44" y2="50"/>',
+    "raised_fist": '<rect x="22" y="26" width="20" height="18" rx="4"/><line x1="26" y1="26" x2="26" y2="16"/><line x1="32" y1="26" x2="32" y2="14"/><line x1="38" y1="26" x2="38" y2="16"/><line x1="22" y1="44" x2="22" y2="54"/>',
+    "burst_screen": '<rect x="14" y="14" width="36" height="24" rx="2"/><line x1="24" y1="46" x2="40" y2="46"/><line x1="32" y1="38" x2="32" y2="46"/><line x1="32" y1="20" x2="32" y2="12"/><line x1="24" y1="22" x2="18" y2="16"/><line x1="40" y1="22" x2="46" y2="16"/>',
+    "newspaper": '<path d="M14 14 H44 L50 20 V50 H14 Z"/><path d="M44 14 V20 H50"/><line x1="20" y1="26" x2="42" y2="26"/><line x1="20" y1="32" x2="42" y2="32"/><line x1="20" y1="38" x2="34" y2="38"/>',
+    "cracked_seal": '<circle cx="32" cy="32" r="18"/><path d="M20 20 L28 30 L22 36 L36 44 L30 48"/>',
+    "radio_waves": '<path d="M20 44 L20 28 L32 20 V52 L20 44 Z"/><path d="M40 24 Q46 32 40 40"/><path d="M46 18 Q56 32 46 46"/>',
+    "guillotine": '<line x1="16" y1="52" x2="48" y2="52"/><line x1="20" y1="52" x2="20" y2="12"/><line x1="44" y1="52" x2="44" y2="12"/><line x1="20" y1="12" x2="44" y2="12"/><path d="M20 26 L44 34"/><path d="M44 12 L54 12 L44 20 Z"/>',
+    "scroll_check": '<path d="M16 20 Q12 20 12 24 Q12 28 16 28 H44 Q48 28 48 24 Q48 20 44 20 Z"/><line x1="16" y1="34" x2="44" y2="34"/><line x1="16" y1="40" x2="44" y2="40"/><path d="M22 48 L28 54 L42 40"/>',
+    "footpath_salt": '<circle cx="12" cy="46" r="2"/><circle cx="22" cy="40" r="2"/><circle cx="32" cy="36" r="2"/><circle cx="42" cy="30" r="2"/><path d="M50 16 L56 24 L50 32 L44 24 Z"/>',
+    "palace_swords": '<line x1="18" y1="46" x2="34" y2="18"/><line x1="46" y1="46" x2="30" y2="18"/><path d="M18 46 L14 50 M46 46 L50 50"/><path d="M14 16 L50 16 L44 28 L20 28 Z"/>',
+    "falling_chart": '<path d="M10 40 L22 26 L32 34 L46 14"/><path d="M40 14 H46 V20"/><path d="M12 50 L52 50"/>',
+    "crown_book": '<path d="M16 24 L22 12 L32 22 L42 12 L48 24 Z"/><line x1="16" y1="24" x2="48" y2="24"/><path d="M14 34 Q32 28 50 34 V46 Q32 40 14 46 Z"/>',
+    "cliff_drop": '<path d="M10 40 Q20 20 30 22"/><path d="M30 22 L30 34 L50 52"/><circle cx="50" cy="52" r="3"/>',
+    "press_lever": '<rect x="16" y="38" width="32" height="8"/><line x1="32" y1="38" x2="32" y2="18"/><line x1="32" y1="18" x2="46" y2="10"/><line x1="16" y1="46" x2="16" y2="54"/><line x1="48" y1="46" x2="48" y2="54"/>',
+    "hangeul_blocks": '<rect x="12" y="14" width="14" height="14" rx="2"/><circle cx="19" cy="21" r="3"/><rect x="34" y="14" width="14" height="14" rx="2"/><line x1="38" y1="17" x2="38" y2="25"/><line x1="38" y1="21" x2="44" y2="21"/><rect x="22" y="36" width="20" height="14" rx="2"/><line x1="26" y1="43" x2="38" y2="43"/>',
+    "coin_drop_arrow": '<ellipse cx="24" cy="18" rx="10" ry="4"/><ellipse cx="24" cy="24" rx="10" ry="4"/><ellipse cx="24" cy="30" rx="10" ry="4"/><line x1="44" y1="14" x2="44" y2="46"/><path d="M36 38 L44 48 L52 38"/>',
+    "turtle_ship": '<path d="M10 40 Q32 50 54 40"/><path d="M14 40 Q32 22 50 40"/><path d="M22 22 L26 16 M32 20 L32 14 M42 22 L38 16"/>',
+    "gear_smoke": '<circle cx="24" cy="34" r="10"/><line x1="24" y1="20" x2="24" y2="14"/><line x1="24" y1="48" x2="24" y2="54"/><line x1="10" y1="34" x2="4" y2="34"/><line x1="14" y1="24" x2="10" y2="20"/><line x1="14" y1="44" x2="10" y2="48"/><path d="M46 40 V22 Q46 14 54 12 Q48 18 52 24 Q46 28 50 34"/>',
+    "syringe": '<line x1="14" y1="50" x2="30" y2="34"/><path d="M26 30 L38 18 L44 24 L32 36 Z"/><line x1="40" y1="20" x2="48" y2="12"/><line x1="44" y1="10" x2="50" y2="16"/>',
+    "book_stack": '<rect x="14" y="38" width="36" height="8"/><rect x="17" y="28" width="30" height="8"/><rect x="20" y="18" width="24" height="8"/>',
+    "broken_chain": '<ellipse cx="18" cy="32" rx="7" ry="11"/><ellipse cx="46" cy="32" rx="7" ry="11"/><path d="M28 26 L32 32 L26 36 L36 40"/>',
+    "pump_map": '<line x1="20" y1="50" x2="20" y2="30"/><path d="M20 30 L34 30 L34 18"/><line x1="12" y1="50" x2="28" y2="50"/><circle cx="44" cy="20" r="2"/><circle cx="50" cy="30" r="2"/><circle cx="42" cy="38" r="2"/>',
+    "scroll_seal": '<path d="M14 16 Q10 16 10 22 Q10 28 14 28 H42 V16 Z"/><line x1="42" y1="16" x2="42" y2="28"/><circle cx="44" cy="42" r="8"/><line x1="42" y1="28" x2="44" y2="34"/>',
+    "joined_hands": '<path d="M10 34 Q22 20 34 34"/><path d="M54 34 Q42 20 30 34"/><line x1="30" y1="34" x2="34" y2="34"/>',
+    "speech_bubble": '<path d="M14 16 H50 Q54 16 54 20 V36 Q54 40 50 40 H28 L18 50 V40 H14 Q10 40 10 36 V20 Q10 16 14 16 Z"/><line x1="20" y1="24" x2="44" y2="24"/><line x1="20" y1="30" x2="38" y2="30"/>',
+    "waving_flag": '<line x1="18" y1="14" x2="18" y2="52"/><path d="M18 16 Q30 10 34 16 Q38 22 46 18 V32 Q38 36 34 30 Q30 24 18 30 Z"/><circle cx="26" cy="46" r="2"/><circle cx="34" cy="48" r="2"/><circle cx="42" cy="46" r="2"/>',
+    "magnifier_list": '<circle cx="26" cy="26" r="12"/><line x1="35" y1="35" x2="48" y2="48"/><line x1="14" y1="46" x2="26" y2="46"/><line x1="14" y1="52" x2="22" y2="52"/>',
+    "rising_sun_ship": '<line x1="14" y1="46" x2="50" y2="46"/><path d="M10 46 Q32 52 54 46"/><line x1="32" y1="46" x2="32" y2="30"/><path d="M32 32 L42 40 L32 40 Z"/><path d="M20 22 L20 14 M28 20 L26 12 M36 20 L38 12 M44 22 L48 15"/>',
+    "factory_arrow": '<rect x="12" y="30" width="24" height="20"/><path d="M16 30 V20 L22 26 V20 L28 26 V16"/><path d="M44 46 L44 18 M44 18 L38 26 M44 18 L50 26"/>',
+    "dove_horizon": '<path d="M14 30 Q22 18 32 26 Q42 18 50 30 Q40 28 32 32 Q24 28 14 30 Z"/><line x1="10" y1="44" x2="54" y2="44"/>',
+    "tools_building": '<line x1="16" y1="14" x2="32" y2="30"/><path d="M14 12 L22 12 L22 18 L14 18 Z"/><line x1="48" y1="14" x2="34" y2="28"/><line x1="30" y1="24" x2="38" y2="32"/><rect x="18" y="38" width="28" height="14"/>',
+    "oil_drop_pump": '<path d="M32 12 Q44 30 32 40 Q20 30 32 12 Z"/><line x1="32" y1="46" x2="32" y2="52"/><line x1="24" y1="52" x2="40" y2="52"/>',
+    "cannon_ship": '<path d="M8 42 Q32 52 56 42"/><line x1="8" y1="48" x2="56" y2="48"/><line x1="24" y1="30" x2="44" y2="30"/><rect x="18" y="26" width="10" height="8"/><circle cx="48" cy="24" r="2"/>',
+    "paddle_ball": '<ellipse cx="16" cy="24" rx="8" ry="10" transform="rotate(-20 16 24)"/><line x1="22" y1="32" x2="28" y2="40"/><ellipse cx="48" cy="40" rx="8" ry="10" transform="rotate(-20 48 40)"/><line x1="42" y1="32" x2="36" y2="24"/><circle cx="32" cy="30" r="2.4"/>',
+    "yen_wave": '<line x1="20" y1="14" x2="32" y2="30"/><line x1="44" y1="14" x2="32" y2="30"/><line x1="32" y1="30" x2="32" y2="50"/><line x1="24" y1="36" x2="40" y2="36"/><line x1="24" y1="42" x2="40" y2="42"/>',
+    "door_nail": '<rect x="18" y="12" width="24" height="40"/><circle cx="34" cy="32" r="1.6"/><path d="M42 16 L50 12 L50 20 Z"/><line x1="42" y1="16" x2="50" y2="16"/>',
+    "puppet_strings": '<path d="M20 14 L32 8 L44 14 L38 20 H26 Z"/><line x1="26" y1="20" x2="20" y2="34"/><line x1="38" y1="20" x2="44" y2="34"/><line x1="14" y1="8" x2="50" y2="8"/><line x1="20" y1="34" x2="20" y2="8"/><line x1="44" y1="34" x2="44" y2="8"/>',
+    "chip_circuit": '<rect x="18" y="18" width="28" height="28"/><line x1="24" y1="18" x2="24" y2="10"/><line x1="32" y1="18" x2="32" y2="10"/><line x1="40" y1="18" x2="40" y2="10"/><line x1="24" y1="46" x2="24" y2="54"/><line x1="32" y1="46" x2="32" y2="54"/><line x1="40" y1="46" x2="40" y2="54"/><line x1="18" y1="26" x2="10" y2="26"/><line x1="18" y1="38" x2="10" y2="38"/><line x1="46" y1="26" x2="54" y2="26"/><line x1="46" y1="38" x2="54" y2="38"/>',
+    "olympic_torch": '<circle cx="20" cy="34" r="8"/><circle cx="32" cy="34" r="8"/><circle cx="44" cy="34" r="8"/><path d="M32 20 Q28 12 32 8 Q36 12 32 20"/>',
+    "tariff_gate": '<line x1="16" y1="14" x2="16" y2="50"/><line x1="48" y1="14" x2="48" y2="50"/><line x1="16" y1="20" x2="48" y2="20"/><path d="M6 40 Q20 46 34 40"/>',
+    "burst_coin_ship": '<path d="M10 44 Q32 52 54 44"/><ellipse cx="32" cy="24" rx="9" ry="4"/><line x1="32" y1="14" x2="32" y2="10"/><line x1="22" y1="18" x2="18" y2="14"/><line x1="42" y1="18" x2="46" y2="14"/>',
+    "mask_virus": '<path d="M14 30 Q32 18 50 30 Q46 42 32 42 Q18 42 14 30 Z"/><circle cx="52" cy="16" r="2.4"/><circle cx="58" cy="22" r="1.6"/><circle cx="50" cy="10" r="1.6"/>',
+    "tulip_arrow": '<path d="M28 30 Q22 18 28 12 Q32 18 32 22 Q32 18 36 12 Q42 18 36 30 Z"/><line x1="32" y1="30" x2="32" y2="48"/><path d="M32 40 Q22 40 20 48"/><path d="M44 40 L52 40 L48 34 M52 40 L48 46"/>',
+    "satellite_orbit": '<ellipse cx="32" cy="32" rx="24" ry="10"/><circle cx="32" cy="20" r="5"/><line x1="27" y1="16" x2="20" y2="10"/><line x1="37" y1="16" x2="44" y2="10"/>',
+    "canal_ship": '<path d="M8 22 Q20 18 24 26 Q16 32 8 26 Z"/><path d="M56 22 Q44 18 40 26 Q48 32 56 26 Z"/><line x1="24" y1="26" x2="40" y2="26"/><circle cx="32" cy="26" r="2"/>',
+    "tulip": '<path d="M26 34 Q20 22 26 14 Q32 20 32 26 Q32 20 38 14 Q44 22 38 34 Z"/><line x1="32" y1="34" x2="32" y2="52"/><path d="M32 44 Q22 44 20 52"/><path d="M32 44 Q42 44 44 52"/>',
+    "laurel_globe": '<circle cx="32" cy="28" r="16"/><line x1="16" y1="28" x2="48" y2="28"/><path d="M18 42 Q32 52 46 42"/>',
+    "quill_doc": '<line x1="16" y1="50" x2="42" y2="16"/><path d="M42 16 Q50 12 46 20 Q44 24 40 22 Z"/><line x1="14" y1="30" x2="28" y2="30"/><line x1="14" y1="38" x2="24" y2="38"/>',
+    "keyhole_tape": '<circle cx="26" cy="24" r="8"/><path d="M26 32 L20 46 H32 Z"/><circle cx="48" cy="20" r="6"/><circle cx="48" cy="20" r="2"/>',
+    "wheelbarrow_note": '<circle cx="18" cy="46" r="5"/><path d="M22 46 L44 46 L38 26 H24 Z"/><line x1="44" y1="46" x2="52" y2="38"/><rect x="30" y="10" width="12" height="10" transform="rotate(-10 36 15)"/>',
+    "star_scissors": '<path d="M32 10 L37 24 L52 24 L40 33 L45 48 L32 39 L19 48 L24 33 L12 24 L27 24 Z"/>',
+}
+DEFAULT_ICON = '<circle cx="32" cy="32" r="16"/><circle cx="32" cy="32" r="3"/>'
+SLUG_ICON = {
+    "age-of-exploration-1492": "ship",
+    "berlin-wall-1989": "wall_break",
+    "birth-of-internet-1969": "network",
+    "black-death-1347": "plague_mask",
+    "brandt-ostpolitik-1970": "bow_figure",
+    "bretton-woods-1944": "globe_coin",
+    "byeongja-horan-1636": "crossed_spears",
+    "california-gold-rush-1848": "pickaxe",
+    "daedongbeop-1608": "scale",
+    "donghak-peasant-revolution-1894": "raised_fist",
+    "dotcom-bubble-2000": "burst_screen",
+    "dreyfus-affair-1894": "newspaper",
+    "eulsa-treaty-1905": "cracked_seal",
+    "fireside-chats-1933": "radio_waves",
+    "french-revolution-1789": "guillotine",
+    "gabo-reform-1894": "scroll_check",
+    "gandhi-salt-march-1930": "footpath_salt",
+    "gapsin-coup-1884": "palace_swords",
+    "global-financial-crisis-2008": "falling_chart",
+    "glorious-revolution-1688": "crown_book",
+    "great-depression-1929": "cliff_drop",
+    "gutenberg-printing-1450": "press_lever",
+    "gyeyu-coup-1453": "palace_swords",
+    "hunminjeongeum-1443": "hangeul_blocks",
+    "imf-crisis-1997": "coin_drop_arrow",
+    "imjin-war-1592": "turtle_ship",
+    "industrial-revolution-1760": "gear_smoke",
+    "jiseokyeong-vaccination-1879": "syringe",
+    "joseon-annals-1413": "book_stack",
+    "liberation-division-1945": "broken_chain",
+    "london-cholera-1854": "pump_map",
+    "magna-carta-1215": "scroll_seal",
+    "mandela-trc-1990": "joined_hands",
+    "manmin-gongdonghoe-1898": "speech_bubble",
+    "march-first-movement-1919": "waving_flag",
+    "mccarthyism-1950": "magnifier_list",
+    "meiji-restoration-1868": "rising_sun_ship",
+    "miracle-on-the-han-1962": "factory_arrow",
+    "mlk-civil-rights-1955": "dove_horizon",
+    "new-deal-1933": "tools_building",
+    "oil-shock-1973": "oil_drop_pump",
+    "opium-war-1839": "cannon_ship",
+    "ping-pong-diplomacy-1971": "paddle_ball",
+    "plaza-accord-japan-bubble-1985": "yen_wave",
+    "reformation-1517": "door_nail",
+    "sedo-politics-1800": "puppet_strings",
+    "semiconductor-trade-war-1986": "chip_circuit",
+    "seoul-olympics-1988": "olympic_torch",
+    "smoot-hawley-1930": "tariff_gate",
+    "south-sea-bubble-1720": "burst_coin_ship",
+    "spanish-flu-1918": "mask_virus",
+    "speculation-info-diffusion": "tulip_arrow",
+    "sputnik-shock-1957": "satellite_orbit",
+    "suez-canal-1869": "canal_ship",
+    "tulip-mania-1637": "tulip",
+    "un-founding-1945": "laurel_globe",
+    "us-constitution-1787": "quill_doc",
+    "watergate-1972": "keyhole_tape",
+    "weimar-hyperinflation-1923": "wheelbarrow_note",
+    "xinhai-revolution-1911": "star_scissors",
+}
+
 def parse_frontmatter(text):
     meta, body = {}, text
     m = re.match(r"^---\s*\n(.*?)\n---\s*\n", text, re.S)
@@ -94,6 +220,7 @@ def load_events():
         track = str(meta.get("track", "기타"))
         ys = year_int(meta.get("year_start", 9999))
         ye = year_int(meta.get("year_end", ys))
+        slug = str(meta.get("slug", os.path.splitext(os.path.basename(path))[0]))
         evs.append({
             "title": str(meta.get("title", os.path.basename(path))),
             "ys": ys, "ye": ye,
@@ -106,6 +233,7 @@ def load_events():
             "one": one_liner(body),
             "rhymes": rhyme_count(body),
             "html": md_to_html(body),
+            "icon": ICON_GLYPHS.get(SLUG_ICON.get(slug, ""), DEFAULT_ICON),
         })
     evs.sort(key=lambda e: (e["ys"], e["ye"]))
     return evs
@@ -161,6 +289,10 @@ nav button.on{color:var(--ink);border-bottom-color:var(--gold)}
 .ev.L .dot{right:-51px}.ev.R .dot{left:-51px}
 .ev .conn{position:absolute;top:16px;height:1px;width:34px;background:var(--hair)}
 .ev.L .conn{right:-40px}.ev.R .conn{left:-40px}
+.evimg{width:54px;height:54px;border-radius:50%;background:oklch(98% .008 80);border:1px solid var(--hair);box-shadow:0 0 0 4px var(--paper),0 0 0 5px var(--hair);display:flex;align-items:center;justify-content:center;margin:0 auto 14px;color:var(--gold)}
+.evimg svg{width:28px;height:28px;overflow:visible}
+.dhead .evimg{width:78px;height:78px;margin:0 auto 16px}
+.dhead .evimg svg{width:40px;height:40px}
 .ev .yr{font-family:'Nanum Myeongjo',serif;font-size:17px;letter-spacing:.14em;color:var(--ink)}
 .ev .num{font-family:'Nanum Myeongjo',serif;color:var(--gold);font-size:13px;letter-spacing:.2em;margin:14px 0 2px}
 .ev .track{font-style:italic;color:var(--gold);font-size:13.5px;margin:6px 0 4px}
@@ -216,12 +348,13 @@ footer{position:relative;z-index:1;text-align:center;padding:30px 5vw 70px;color
 <div class="tl" id="tl"></div>
 <footer>청사의 방 — SAGE HISTORY</footer>
 
-<dialog id="dlg"><button class="dclose" onclick="dlg.close()" aria-label="닫기">×</button><div class="dhead"><div class="cat" id="dcat"></div><h2 id="dtitle"></h2><div class="who" id="dwho"></div></div><div class="dbody" id="dbody"></div></dialog>
+<dialog id="dlg"><button class="dclose" onclick="dlg.close()" aria-label="닫기">×</button><div class="dhead"><div class="evimg" id="dimg"></div><div class="cat" id="dcat"></div><h2 id="dtitle"></h2><div class="who" id="dwho"></div></div><div class="dbody" id="dbody"></div></dialog>
 <script>
 const EVS=__DATA__;
 const TRACKS=__TRACKS__;
 let track="전체", q="";
 const nav=document.getElementById("nav"), tl=document.getElementById("tl");
+function iconSvg(e){return `<svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">${e.icon}</svg>`}
 ["전체",...TRACKS].forEach(t=>{const b=document.createElement("button");b.className=t==="전체"?"on":"";b.textContent=t;
  b.onclick=()=>{track=t;nav.querySelectorAll("button").forEach(x=>x.classList.toggle("on",x===b));draw()};nav.appendChild(b)});
 document.getElementById("q").addEventListener("input",e=>{q=e.target.value.trim().toLowerCase();draw()});
@@ -240,6 +373,7 @@ function draw(){
     idx++;
     const b=document.createElement("button");b.className="ev "+(side%2? "R":"L");side++;
     b.innerHTML=`<span class="dot"></span><span class="conn"></span>
+      <div class="evimg">${iconSvg(e)}</div>
       <div class="yr">${e.period}</div>
       <div class="num">${String(idx).padStart(2,"0")}</div>
       <div class="track">${e.track}</div>
@@ -251,6 +385,7 @@ function draw(){
   });
 }
 function open(e){
+  document.getElementById("dimg").innerHTML=iconSvg(e);
   document.getElementById("dcat").textContent=e.track;
   document.getElementById("dtitle").textContent=e.title;
   document.getElementById("dwho").textContent=e.period+" · "+e.region+" · "+e.reliability;
@@ -331,15 +466,19 @@ dialog::backdrop{background:oklch(26% .02 60/.5);backdrop-filter:blur(3px)}
 .dbody p{margin:9px 0}.dbody ul,.dbody ol{margin:9px 0 9px 20px}.dbody li{margin:6px 0}
 .dbody em{color:oklch(48% .08 70)}
 .dclose{position:absolute;top:16px;right:20px;border:1px solid var(--hair);background:none;border-radius:50%;width:33px;height:33px;cursor:pointer;color:var(--sub);font-family:serif}
+.evimg{width:70px;height:70px;border-radius:50%;background:oklch(98% .008 80);border:1px solid var(--hair);box-shadow:0 0 0 4px var(--paper),0 0 0 5px var(--hair);display:flex;align-items:center;justify-content:center;margin:0 auto 14px;color:var(--gold)}
+.evimg svg{width:36px;height:36px;overflow:visible}
 @media (max-width:640px){.dhead,.dbody{padding-left:22px;padding-right:22px}}
 </style></head><body>
 <header><div class="eyebrow">One timeline, many worlds</div><h1>동서 대조 연표</h1>
 <div class="sub"><a href="timeline.html">← 연대기로 돌아가기</a> · 세기 × 권역 · 패권 표기는 통설 기준 참고 정보</div></header>
 <div class="wrap"><table><thead><tr><th></th>__HEAD__</tr></thead><tbody>__BODY__</tbody></table></div>
-<dialog id="dlg"><button class="dclose" onclick="dlg.close()">×</button><div class="dhead"><div class="cat" id="dcat"></div><h2 id="dtitle"></h2><div class="who" id="dwho"></div></div><div class="dbody" id="dbody"></div></dialog>
+<dialog id="dlg"><button class="dclose" onclick="dlg.close()">×</button><div class="dhead"><div class="evimg" id="dimg"></div><div class="cat" id="dcat"></div><h2 id="dtitle"></h2><div class="who" id="dwho"></div></div><div class="dbody" id="dbody"></div></dialog>
 <script>
 const EVS=__DATA__;
+function iconSvg(e){return `<svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">${e.icon}</svg>`}
 document.querySelectorAll(".chip2").forEach(b=>b.onclick=()=>{const e=EVS[+b.dataset.i];
+ document.getElementById("dimg").innerHTML=iconSvg(e);
  document.getElementById("dcat").textContent=e.track;
  document.getElementById("dtitle").textContent=e.title;
  document.getElementById("dwho").textContent=e.period+" · "+e.region+" · "+e.reliability;
