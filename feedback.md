@@ -4,3 +4,4 @@
 
 - (예시: CANDIDATES 후보 전부 승인 / 3번, 7번 제외)
 - CANDIDATES 후보 전부 승인 [반영완료 2026-08-17: 30건 전건 EVENTLIST.md 61~90번으로 병합, CANDIDATES.md 비움]
+- CANDIDATES 후보 전부 승인 [반영완료 2026-09-02: 30건 전건 EVENTLIST.md 91~120번으로 병합, CANDIDATES.md 비움]
