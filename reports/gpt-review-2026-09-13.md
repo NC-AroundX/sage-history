@@ -304,3 +304,102 @@
 ---
 
 [처리완료 2026-09-13, 3차 — 이하 batch-21까지 누적된 섹션은 전부 "감수 실패"(OpenAI 크레딧 소진, HTTP 429)로 실제 지적 내용이 없어 반영·기각할 항목이 없음을 확인함. 크레딧 충전 전까지 이런 실패 섹션이 매 푸시마다 반복 추가될 수 있음.]
+
+---
+
+# GPT 감수 리포트 (2026-09-13)
+
+모델: gpt-5-mini · 대상 7건 · 이 리포트는 참고용이며 카드에 자동 반영되지 않는다.
+타당한 지적만 feedback.md에 옮겨 적으면 다음 배치에서 반영된다.
+**요약: 7건 중 7건에 지적 있음**
+
+## 알제리 독립전쟁
+`events/algerian-independence-war-1954.md`
+
+(감수 실패: HTTP 429 — {
+    "error": {
+        "message": "You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.",
+        "type": "insufficient_quota",
+        "param": null,
+        "code": "credit_balance_exhausted"
+    }
+}
+)
+
+## 칠레 피노체트 이후 이행기 정의(레티그 위원회)
+`events/chile-rettig-commission-1990.md`
+
+(감수 실패: HTTP 429 — {
+    "error": {
+        "message": "You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.",
+        "type": "insufficient_quota",
+        "param": null,
+        "code": "credit_balance_exhausted"
+    }
+}
+)
+
+## 라이베리아 내전 이후 진실화해위원회
+`events/liberia-trc-2006.md`
+
+(감수 실패: HTTP 429 — {
+    "error": {
+        "message": "You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.",
+        "type": "insufficient_quota",
+        "param": null,
+        "code": "credit_balance_exhausted"
+    }
+}
+)
+
+## 나폴레옹 전쟁과 워털루 전투
+`events/napoleonic-wars-1803.md`
+
+(감수 실패: HTTP 429 — {
+    "error": {
+        "message": "You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.",
+        "type": "insufficient_quota",
+        "param": null,
+        "code": "credit_balance_exhausted"
+    }
+}
+)
+
+## 대처리즘과 영국의 신자유주의 개혁
+`events/thatcherism-1979.md`
+
+(감수 실패: HTTP 429 — {
+    "error": {
+        "message": "You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.",
+        "type": "insufficient_quota",
+        "param": null,
+        "code": "credit_balance_exhausted"
+    }
+}
+)
+
+## 우루과이 군사독재 이후 이행기 정의
+`events/uruguay-transitional-justice-1985.md`
+
+(감수 실패: HTTP 429 — {
+    "error": {
+        "message": "You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.",
+        "type": "insufficient_quota",
+        "param": null,
+        "code": "credit_balance_exhausted"
+    }
+}
+)
+
+## 청년튀르크 혁명과 오스만 제국의 입헌정치 실험
+`events/young-turk-revolution-1908.md`
+
+(감수 실패: HTTP 429 — {
+    "error": {
+        "message": "You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.",
+        "type": "insufficient_quota",
+        "param": null,
+        "code": "credit_balance_exhausted"
+    }
+}
+)
