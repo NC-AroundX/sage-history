@@ -70,3 +70,63 @@
     }
 }
 )
+
+---
+
+# GPT 감수 리포트 (2026-09-13)
+
+모델: gpt-5-mini · 대상 4건 · 이 리포트는 참고용이며 카드에 자동 반영되지 않는다.
+타당한 지적만 feedback.md에 옮겨 적으면 다음 배치에서 반영된다.
+**요약: 4건 중 4건에 지적 있음**
+
+## 알제리 독립전쟁
+`events/algerian-independence-war-1954.md`
+
+(감수 실패: HTTP 429 — {
+    "error": {
+        "message": "You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.",
+        "type": "insufficient_quota",
+        "param": null,
+        "code": "credit_balance_exhausted"
+    }
+}
+)
+
+## 1948 아랍-이스라엘 전쟁과 팔레스타인 난민 문제
+`events/arab-israeli-war-1948.md`
+
+(감수 실패: HTTP 429 — {
+    "error": {
+        "message": "You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.",
+        "type": "insufficient_quota",
+        "param": null,
+        "code": "credit_balance_exhausted"
+    }
+}
+)
+
+## 호주 정부의 원주민 사과와 '도둑맞은 세대'
+`events/australia-stolen-generations-1997.md`
+
+(감수 실패: HTTP 429 — {
+    "error": {
+        "message": "You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.",
+        "type": "insufficient_quota",
+        "param": null,
+        "code": "credit_balance_exhausted"
+    }
+}
+)
+
+## 코소보 전쟁과 나토의 인도적 개입
+`events/kosovo-war-1998.md`
+
+(감수 실패: HTTP 429 — {
+    "error": {
+        "message": "You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.",
+        "type": "insufficient_quota",
+        "param": null,
+        "code": "credit_balance_exhausted"
+    }
+}
+)
