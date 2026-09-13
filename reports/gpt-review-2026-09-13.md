@@ -403,3 +403,76 @@
     }
 }
 )
+
+---
+
+# GPT 감수 리포트 (2026-09-13)
+
+모델: gpt-5-mini · 대상 5건 · 이 리포트는 참고용이며 카드에 자동 반영되지 않는다.
+타당한 지적만 feedback.md에 옮겨 적으면 다음 배치에서 반영된다.
+**요약: 5건 중 5건에 지적 있음**
+
+## 코로나19 백신 불평등과 COVAX 체제
+`events/covid-vaccine-inequity-covax-2020.md`
+
+(감수 실패: HTTP 429 — {
+    "error": {
+        "message": "You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.",
+        "type": "insufficient_quota",
+        "param": null,
+        "code": "credit_balance_exhausted"
+    }
+}
+)
+
+## 제1차 콜레라 팬데믹과 국제 검역 체제의 기원
+`events/first-cholera-pandemic-1817.md`
+
+(감수 실패: HTTP 429 — {
+    "error": {
+        "message": "You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.",
+        "type": "insufficient_quota",
+        "param": null,
+        "code": "credit_balance_exhausted"
+    }
+}
+)
+
+## 나폴레옹의 생도맹그(아이티) 원정과 황열병 궤멸
+`events/napoleon-haiti-yellow-fever-1802.md`
+
+(감수 실패: HTTP 429 — {
+    "error": {
+        "message": "You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.",
+        "type": "insufficient_quota",
+        "param": null,
+        "code": "credit_balance_exhausted"
+    }
+}
+)
+
+## 소아마비 백신 개발과 세계 폴리오 박멸 운동
+`events/polio-vaccine-1955.md`
+
+(감수 실패: HTTP 429 — {
+    "error": {
+        "message": "You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.",
+        "type": "insufficient_quota",
+        "param": null,
+        "code": "credit_balance_exhausted"
+    }
+}
+)
+
+## 미국 오피오이드 위기와 제약회사 책임 논쟁
+`events/us-opioid-crisis-1996.md`
+
+(감수 실패: HTTP 429 — {
+    "error": {
+        "message": "You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.",
+        "type": "insufficient_quota",
+        "param": null,
+        "code": "credit_balance_exhausted"
+    }
+}
+)
