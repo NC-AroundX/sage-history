@@ -36,3 +36,37 @@
 - [검토제안] "절대빈곤율도 크게 낮아졌다(1970년대 60%대에서 1990년대 중반 10%대)" → 빈곤율 하락 수치는 빈곤선 설정과 통계 방법에 따라 크게 달라지므로 출처·정의(국가빈곤선 vs. 국제빈곤선)를 명시해 검증할 것을 권합니다.
 - [검토제안] "1975년에는 포르투갈이 철수한 동티모르를 침공해 강제 병합했는데" → 인도네시아의 군사침공은 1975년 12월에 발생했고, 공식적 합병(강제 병합, annexation)은 1976년에 선언되었으므로 연도 표기와 서술이 혼동을 줄 수 있습니다.
 - [검토제안] "동티모르 독립과 진실화해수용위원회(1999-2005, 105번 카드)" → 동티모르의 독립투표는 1999년에 있었고 CAVR(Commission for Reception, Truth and Reconciliation)은 실무적으로 2001–2005년에 활동했으므로 '1999-2005'라는 기간 표기가 다소 부정확할 수 있습니다.
+
+---
+
+# GPT 감수 리포트 (2026-09-13)
+
+모델: gpt-5-mini · 대상 2건 · 이 리포트는 참고용이며 카드에 자동 반영되지 않는다.
+타당한 지적만 feedback.md에 옮겨 적으면 다음 배치에서 반영된다.
+**요약: 2건 중 2건에 지적 있음**
+
+## 1948 아랍-이스라엘 전쟁과 팔레스타인 난민 문제
+`events/arab-israeli-war-1948.md`
+
+(감수 실패: HTTP 429 — {
+    "error": {
+        "message": "You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.",
+        "type": "insufficient_quota",
+        "param": null,
+        "code": "credit_balance_exhausted"
+    }
+}
+)
+
+## 나폴레옹 전쟁과 워털루 전투
+`events/napoleonic-wars-1803.md`
+
+(감수 실패: HTTP 429 — {
+    "error": {
+        "message": "You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.",
+        "type": "insufficient_quota",
+        "param": null,
+        "code": "credit_balance_exhausted"
+    }
+}
+)
