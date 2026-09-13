@@ -836,3 +836,24 @@
     }
 }
 )
+
+---
+
+# GPT 감수 리포트 (2026-09-13)
+
+모델: gpt-5-mini · 대상 1건 · 이 리포트는 참고용이며 카드에 자동 반영되지 않는다.
+타당한 지적만 feedback.md에 옮겨 적으면 다음 배치에서 반영된다.
+**요약: 1건 중 1건에 지적 있음**
+
+## 냉전기 '자유유럽방송'·'미국의 소리'와 체제 경쟁
+`events/cold-war-radio-free-europe-1950.md`
+
+(감수 실패: HTTP 429 — {
+    "error": {
+        "message": "You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.",
+        "type": "insufficient_quota",
+        "param": null,
+        "code": "credit_balance_exhausted"
+    }
+}
+)
