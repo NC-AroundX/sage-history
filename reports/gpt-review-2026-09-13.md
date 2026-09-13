@@ -535,3 +535,63 @@
     }
 }
 )
+
+---
+
+# GPT 감수 리포트 (2026-09-13)
+
+모델: gpt-5-mini · 대상 4건 · 이 리포트는 참고용이며 카드에 자동 반영되지 않는다.
+타당한 지적만 feedback.md에 옮겨 적으면 다음 배치에서 반영된다.
+**요약: 4건 중 4건에 지적 있음**
+
+## 인도 보팔 가스 참사와 산업재해 책임 논쟁
+`events/bhopal-gas-disaster-1984.md`
+
+(감수 실패: HTTP 429 — {
+    "error": {
+        "message": "You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.",
+        "type": "insufficient_quota",
+        "param": null,
+        "code": "credit_balance_exhausted"
+    }
+}
+)
+
+## 아이티 콜레라 유행과 유엔평화유지군 책임 논쟁
+`events/haiti-cholera-untaet-2010.md`
+
+(감수 실패: HTTP 429 — {
+    "error": {
+        "message": "You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.",
+        "type": "insufficient_quota",
+        "param": null,
+        "code": "credit_balance_exhausted"
+    }
+}
+)
+
+## 미나마타병과 산업공해 인식의 전환
+`events/minamata-disease-1956.md`
+
+(감수 실패: HTTP 429 — {
+    "error": {
+        "message": "You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.",
+        "type": "insufficient_quota",
+        "param": null,
+        "code": "credit_balance_exhausted"
+    }
+}
+)
+
+## 탈리도마이드 사건과 의약품 안전규제의 탄생
+`events/thalidomide-scandal-1957.md`
+
+(감수 실패: HTTP 429 — {
+    "error": {
+        "message": "You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.",
+        "type": "insufficient_quota",
+        "param": null,
+        "code": "credit_balance_exhausted"
+    }
+}
+)
